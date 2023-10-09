@@ -1,35 +1,35 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Cabin&display=swap";
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+    font-family: 'Cabin', sans-serif;
 
 }
 body {
-    background: #3d4152;
+    background: #044E8E;
 }
 .navigation {
     position: fixed;
     inset: 20px 0 20px 20px;
     width: 75px;
-    background: #fff;
+    background: #ECF1FE;
     transition: 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 12px;
     .menuToggle{
         position: absolute;
         top: 0;
         left: 0;
-        height: 60px;
+        height: 70px;
         border-bottom: 1px  solid rgba(0, 0, 0, 0.25);
         cursor: pointer;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        padding: 0 23px;
+        justify-content: center;
+        padding: 0 38px;
         &::before{
             content: "";
             position: absolute;
@@ -107,6 +107,9 @@ body {
                         transition: 0.5s;
                     }
                 }
+                .icon:hover {
+                    background-color: #1f8ff1;
+                }
                 .text{
                     position: relative;
                     padding: 0 15px;
@@ -118,7 +121,9 @@ body {
                     visibility: hidden;
                     transition: 0.5s;
                 }
-                
+                .text:hover {
+                    background-color: #1f8ff1;
+                }
             }
         }
     }
@@ -140,4 +145,3 @@ body {
     visibility: visible;
 }
 }
-/*3.25:48*/
